@@ -1,12 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import '@xterm/xterm/css/xterm.css';
 import { term, ws } from '../utils';
 
 export const XTerminal = () => {
   const termRef = useRef<HTMLDivElement | null>(null);
-  const [commandBuffer, setCommandBuffer] = useState<string>('');
   const bufferRef = useRef<string>('');
 
   useEffect(() => {
@@ -29,7 +28,7 @@ export const XTerminal = () => {
     term.open(termRef.current);
 
     term.writeln(
-      'Hi there! This is \x1B[1;3;31mTerwmser\x1B[0m, your browser terminal'
+      'Hi there! This is \x1B[1;3;31mTerwmser\x1B[0m, your browser terminal.'
     );
 
     const handleKey = ({
@@ -43,7 +42,6 @@ export const XTerminal = () => {
         const commandToSend = bufferRef.current;
         ws.send(JSON.stringify({ type: 'command', payload: commandToSend }));
         bufferRef.current = '';
-        setCommandBuffer('');
         term.write('\r\n');
       } else if (domEvent.key === 'Backspace') {
         bufferRef.current = bufferRef.current.slice(0, -1);
