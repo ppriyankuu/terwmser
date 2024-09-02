@@ -5,7 +5,7 @@ A browser based terminal. Uses Xterm for the terminal interface.
 ```Fun Kitty Project```
 ![screenshot_01](https://i.postimg.cc/qM9TZJrL/ss.png)
 
-### Working
+## Working
 - Frontend sends the command to a websocket server.
 - Server spawns a child process (on a seperate thread) to run the command.
 - Server sends back the result of the command executed.
