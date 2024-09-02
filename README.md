@@ -2,8 +2,8 @@
 # Terwmser
 A browser based terminal. Uses Xterm for the terminal interface.
 
-![screenshot_01](https://i.postimg.cc/qM9TZJrL/ss.png)
 ```Fun Kitty Project```
+![screenshot_01](https://i.postimg.cc/qM9TZJrL/ss.png)
 
 ### Working
 - Frontend sends the command to a websocket server.
