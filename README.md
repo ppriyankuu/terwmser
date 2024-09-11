@@ -2,7 +2,7 @@
 # Terwmser
 A browser based terminal. Uses Xterm for the terminal interface.
 
-```Fun Kitty Project```
+`Fun Kitty Project`
 ![screenshot_01](https://i.postimg.cc/qM9TZJrL/ss.png)
 
 ## Working
