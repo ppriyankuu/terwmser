@@ -23,25 +23,25 @@ A browser based terminal. Uses Xterm for the terminal interface.
 Clone the project
 
 ```bash
-  $ git clone https://github.com/ppriyankuu/terwmser
+$ git clone https://github.com/ppriyankuu/terwmser
 ```
 
 Go to the project directory
 
 ```bash
-  $ cd terwmser
+$ cd terwmser
 ```
 
 Install dependencies
 
 ```bash
-  $ npm install
+$ npm install
 ```
 
 Start the server
 
 ```bash
-  $ npm run dev
+$ npm run dev
 ```
 
 
