@@ -13,8 +13,8 @@ A browser based terminal. Uses Xterm for the terminal interface.
 ## Tech Stack
 - Next js
 - [Xterm.js](https://xtermjs.org/) (terminal interface on browsers)
-- [ws](https://www.npmjs.com/package/ws) (websocket)
-- [node-pty](https://github.com/ppriyankuu) (child processes)
+- [Ws](https://www.npmjs.com/package/ws) (websocket)
+- [node-pty](https://www.npmjs.com/package/node-pty) (child processes)
 
 
 
