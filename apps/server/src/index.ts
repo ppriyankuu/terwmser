@@ -17,6 +17,7 @@ socketServer.on('connection', (socket: WebSocket) => {
   socket.on('message', (message: RawData) => {
     try {
       const data = JSON.parse(message.toString());
+      console.log(data);
       if (data.type === 'command') {
         console.log(`Received command: ${data.payload}`);
         ptyProcess.write(`${data.payload}\n`);
@@ -30,10 +31,12 @@ socketServer.on('connection', (socket: WebSocket) => {
   });
 
   socket.on('close', () => {
+    console.log('closed webSocket');
     ptyProcess.kill();
   });
 
   ptyProcess.onData((data) => {
+    console.log(`PTY data: ${data}`);
     const message = JSON.stringify({ type: 'data', payload: data });
     socket.send(message);
   });
