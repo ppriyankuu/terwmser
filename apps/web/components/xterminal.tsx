@@ -18,7 +18,7 @@ export const XTerminal = () => {
     };
 
     return () => {
-      // ws.close();
+      ws.close();
     };
   }, []);
 
