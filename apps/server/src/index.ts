@@ -1,7 +1,7 @@
 import http from 'http';
 import { createServer } from './server';
 import { WebSocketServer, WebSocket, RawData } from 'ws';
-import { spawn } from 'node-pty';
+// import { spawn } from 'node-pty';
 
 const port = process.env.PORT || 8080;
 const app = createServer();
