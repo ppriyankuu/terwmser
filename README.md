@@ -1,4 +1,3 @@
-
 # Terwmser
 A browser based terminal. Uses Xterm for the terminal interface.
 
