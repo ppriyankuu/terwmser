@@ -8,6 +8,7 @@ const app = createServer();
 const server = http.createServer(app);
 const socketServer = new WebSocketServer({ server });
 
+// socket connection
 socketServer.on('connection', (socket: WebSocket) => {
   const ptyProcess = spawn('bash', [], {
     name: 'xterm-color',
